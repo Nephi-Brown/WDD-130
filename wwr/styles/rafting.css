@@ -2,9 +2,9 @@
 @import "https://fonts.googleapis.com/css?family=Calibri";
 
 :root {
-  --primary-color: #ca5719;;
-  --secondary-color: #066496;
-  --accent-color: #15f764;
+  --primary-color: #066496;
+  --secondary-color: #75ffa5;
+  --accent-color: #6d5927;
   --additional-accent-color: #184E77;
 
   --heading-font: 'Trirong', cursive;
@@ -178,6 +178,47 @@ main {
   margin-bottom: 1px;
 }
 
+.hero .content-box {
+  position: absolute;
+  text-align: center;
+  bottom: 0.5px;
+  left: 5%;
+  right: 0;
+  margin: auto;
+  width: 60%;
+  padding: 35px;
+  transform: translate(-1%, -50%);
+  Background-color: rgba(244, 243, 239, 0.912);
+  /* z-index: 1; */
+}
+
+.hero .content-box h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5px;
+  color: #0882c4;
+}
+
+.hero .content-box p {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1px;
+  color: black;
+}
+
+.hero .content-box img
+{
+  float: right;
+  width: 30%;
+  margin-right: 0.5px;
+  margin-bottom: 5px;
+}
+
+.hero .content-box a {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color:#130196;
+}
+
 .history-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr ;
@@ -303,6 +344,7 @@ main {
 
 .company-info,
 .employee-profiles,
+.newsletter,
 .contact-form {
     max-width: 840px;
     margin: 5px auto;
@@ -327,7 +369,7 @@ main {
   margin-left: 0.5px;
   padding: 15px;
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
   Background-color:rgba(244, 243, 239, 0.912);
   color:#130196;
 }
@@ -440,4 +482,356 @@ contact-form input[type="checkbox"] {
 
 .contact-form button:hover {
     background-color: #1ed233;
+}
+
+.trips,
+.trip-description
+.trip-options {
+    max-width: 840px;
+    margin: 5px auto;
+}
+
+
+section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color:#0882c4
+}
+
+.trip-description h3 {
+  text-align: center;
+  color:#d7733d;
+  font-size: 2rem;
+}
+
+/* Targeting articles in the section with 'Featured Trips' header */
+.trip-description article {
+  /* Add any necessary styling for the article here */
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+/* Styling for images within articles under 'Featured Trips' */
+.trip-description article figure  {
+  float: left;
+/*  width: 33%; */    
+  margin-right: 1rem; /* Add space between image and text */
+}
+
+.float-image-right {
+  float: right !important;
+}
+
+.trip-description article figure img {
+  width: 200px; /* Make the image fill the figure */
+  height: auto; /* Prevent image distortion */
+ /* margin-bottom: .2rem;*/ /* Add space below the image */
+
+}
+
+/* Styling for captions under images */
+.trip-description article figure figcaption {
+  clear: left; /* Ensures the caption goes directly under the image */
+  text-align: center;
+  font-style: italic;
+  font-size: 0.9em; /* Smaller font size for caption */
+  margin-top: 5px; /* Space above the caption */
+}
+
+section.introduction h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #099eed;
+      text-align: center;  
+}
+
+section.introduction img {
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
+  /* only show the top 200 px of image */
+  clip-path: inset(0 0 80% 0);
+}
+
+header.top-header {
+  justify-content: space-evenly;
+  background-color: #d7733d;
+  color: #fff;
+  align-items: normal;
+  padding: 20px;
+}
+
+header.featured-trips h1{
+  text-align: center;
+}
+
+header h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid-item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  background-color: #004d40;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #003d33;
+}
+
+section {
+  max-width: 840px; /* or 100% based on the container's max width */
+  margin: auto;
+  padding: 20px;
+}
+
+section article {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.featured-trips header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.featured-trips h1 {
+  font-size: 2.5em;
+  color: #0056b3; /* or another color that suits the design */
+}
+
+.featured-trips article {
+  margin-bottom: 40px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9; /* a light background to distinguish the trips */
+}
+
+.featured-trips h3 {
+  font-size: 1.8em;
+  color: #d7733d;
+  margin-top: 0;
+}
+
+.featured-trips figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featured-trips img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.featured-trips figcaption {
+  font-size: 1.2em;
+  color: #888;
+}
+
+.featured-trips p {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.trip-options {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto 1fr;
+  gap: 0.2rem;
+  max-width: 840px;
+}
+
+.trip-options h2 {
+  text-align: center;
+  justify-content: center;
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color:#d7733d
+}
+
+.trip-options figure {
+  margin: 0;
+  text-align: center;
+  grid-row: 2/2;
+}
+
+.trip-options figure img {
+  width: 100%;
+  height: auto;
+  grid-row: 2/2;
+}
+
+.welcome-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
+}
+
+.welcome h2 {
+  text-align: center;
+  justify-content: center;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #099eed;
+}
+
+.welcome .p1 {
+  justify-content: space-around;
+  grid-row: 2;
+  grid-column: 1;
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.welcome .first-row {
+  justify-content: space-around;
+  align-self: center;
+  /* align-items: center; */
+  width: 98%;
+  grid-row: 2;
+  grid-column: 2;
+  height: auto;
+}
+
+.welcome .p2 {
+  justify-content: space-around;
+  grid-row: 2;
+  grid-column: 3;
+  margin: 2px auto;
+  padding: 0;
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.welcome .p3 {
+  justify-content: space-around;
+  grid-row: 3;
+  grid-column: 1;
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.welcome .second-row {
+  justify-content: space-around;
+  align-self: center;
+  /* align-items: center; */
+  width: 98%;
+  grid-row: 3;
+  grid-column: 2;
+  height: auto;
+}
+
+.welcome .p4 {
+  justify-content: space-around;
+  grid-row: 3;
+  grid-column: 3;
+  margin: 2px auto;
+  padding: 0;
+  background-color: #ffffff;
+  text-align: left;
+}
+
+/* Newsletter Section */
+.newsletter {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.newsletter h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.newsletter form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+  width: 250px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.newsletter input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.newsletter button {
+  width: 36%;
+  text-align: center;
+  display: inline;
+  font-size: 1.2rem;
+  background-color: #1946cd;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #1ed233;
 }
